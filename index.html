@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-ur+JBtS8xBQkyo/ZZUrD9t3qW1z4GvASeRkzN4cL//Wm+W8YvCuvb1UnCE9X27H5n5i/pv5zBnmwD5QIyF+6mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<title>Restaurant Website</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.menu-item-name{
+			font-size: 25px;
+			color: white;
+		}
+		.menu-item-description {
+			font-size: 20px;
+			color: rgb(15, 8, 222);
+
+		}
+		.menu-item-price{
+			font-size: 20px;
+			color: rgb(15, 8, 222);
+		}
+		.menucard h2{
+			font-size: 32px;
+			color: white;
+		}
+		@media screen and (max-width:600px){
+			span{
+				font-size:15px;
+				color: blue;
+				text-align: justify;
+			}
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="container-fluid bg-info">
+		<p class="text-center text-dark p-3 mb-0" style="font-size: 20px;">Good Friday's Offers <b>50% Off</b> on Order above 15$</p>
+	</div>
+
+	<nav class="navbar navbar-expand-sm bg-dark " style="border-bottom: 1px solid rgb(227, 227, 234);">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center p-3" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center p-3" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center p-3" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center p-3" href="#">Contact</a>
+                </li>
+            </ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link text-white text-right p-3" href="#">Book Table</a>
+				</li>
+			</ul>
+        </div>
+    </nav>
+	
+	
+	
+
+	<div class="container-fluid position-relative p-0 mt-0">
+	    <img  src="https://images.squarespace-cdn.com/content/v1/5835d948414fb5a615f7641e/1481519058032-2V7L61ZFLEDNYTL2CYU7/Food+Photo+Background.jpg?format=2500w" alt="image of burger" width="100%" height="730px">
+		<div class="position-absolute top-50 start-50 translate-middle ">
+			<h2 class="text-warning text-center" style="font-size: 45px;"><i>Welcome To the Taste Restaurant</i></h2>
+			<p class="text-info text-center " style="font-size: 28px; text-align: justify;">"Food that makes you say wow."</p>
+			<button type="button" class="btn btn-outline-dark btn-large d-block mx-auto p-3 text-white">Order Now</button>
+
+		</div>
+        <!--<span class="position-absolute top-50 start-50 translate-middle p-5 text-white" style="font-size: 35px;">Pizza Villa</span>-->
+	</div>
+
+    <!--
+		<div class="container-fluid p-5 bg-dark">
+	    <div class="d-flex flex-wrap justify-content-center">
+			<div class="col-md-6 col-lg-6 col-xl-6 p-5 text-white text-center">
+				<img class="img-fluid" src="tablesetting.jpg" alt="image of tablesetting">
+			</div>
+		    <div class="col-md-6 col-lg-6 col-xl-6 p-5 text-white text-center">
+			    <p class="h1 p-2">About Catering</p>
+			    <p class="h4 p-2">Tradition since 1889</p>
+			    <p style="font-size: 22px;text-align: justify;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+			    <p style="font-size: 22px;text-align: justify; color: grey;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </div>
+	-->
+
+	<div class="container-fluid p-5 bg-dark" style="border-top: 2px solid white;">
+	    <div class="d-flex flex-wrap justify-content-center">
+			<div class="col-md-5 col-lg-5 col-xl-5 p-5 text-white text-center">
+				<img class="img-fluid" src="tablesetting.jpg" alt="image of tablesetting">
+			</div>
+		    <div class="col-md-5 col-lg-5 col-xl-5 p-5 text-white text-center">
+			    <p class="h1 p-3">About Restaurant</p>
+			    <p class="h4 p-3">Tradition since 1889</p>
+			    <p style="font-size: 24px;text-align: justify;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+			    <p style="font-size: 24px;text-align: justify; color: grey;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </div>
+
+	
+
+   <div class="container-fluid bg-dark pt-5 pb-0" style="border-top: 2px solid white;">
+	<div class="container">
+		<div class="row p-5">
+		  <div class="col-md-6">
+			<div class="menucard">
+			  <h2 class="pb-3">OUR MENU</h2>
+			  
+			  <div class="menu-item">
+				<h4 class="menu-item-name ">Bread Basket</h4>
+				<p class="menu-item-description ">Assortment of fresh baked fruit breads and muffins</p>
+				<p class="menu-item-price text-warning ">$5.50</p>
+			  </div>
+			  
+			  <div class="menu-item">
+				<h4 class="menu-item-name ">Honey Almond Granola with Fruits</h4>
+				<p class="menu-item-description ">Natural cereal of honey toasted oats, raisins, almonds and dates</p>
+				<p class="menu-item-price text-warning ">$7.00</p>
+			  </div>
+			  
+			  <div class="menu-item">
+				<h4 class="menu-item-name ">Belgian Waffle</h4>
+				<p class="menu-item-description ">Vanilla flavored batter with malted flour</p>
+				<p class="menu-item-price text-warning ">$7.50</p>
+			  </div>
+			  
+			  <div class="menu-item">
+				<h4 class="menu-item-name ">Scrambled eggs</h4>
+				<p class="menu-item-description ">Scrambled eggs, roasted red pepper and garlic, with green onions</p>
+				<p class="menu-item-price text-warning ">$7.50</p>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="col-md-6">
+			<div class="menuimage">
+			  <img src="menu-cardmenu.jpg" alt="image of menu" class="img-fluid" >
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+<div class="container-fluid bg-dark p-5" style="border-top: 2px solid white;">
+	<div class="container mt-0  p-5">
+        <h2 class="text-white pb-3">Book a Table</h2>
+		<p class="text-light">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+       
+        <form>
+        <div class="row mb-4 ">
+            <div class="col">
+				<label for="name" class="text-white">Name:</label>
+                <input type="text" class="form-control p-2" placeholder="Enter your name" name="name">
+            </div>
+        </div>
+		<div class="row">
+			<div class="col">
+				<label for="people" class="text-white">How many People:</label>
+                <input type="number" class="form-control p-2" placeholder="How many people" name="people">
+            </div>
+		</div>
+		<div class="row mt-4">
+			<div class="col">
+				<label for="date" class="text-white">Date & Time:</label>
+                <input type="datetime-local" class="form-control p-2" placeholder="Date and Time" name="date">
+            </div>
+		</div>
+		<div class="row mt-4">
+			<div class="col">
+				<label for="reqirements" class="text-white">Message\Requirements:</label>
+                <input type="text" class="form-control p-2" placeholder="Message\Special requirements" name="message">
+            </div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<button type="submit" class="btn btn-warning mt-4 p-2 text-dark" style="display: block; margin: auto; width: 100%;font-size: 22px;">Send Message</button>
+			</div>
+
+		</div>
+        </form>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-dark p-5" style="border-top: 2px solid white;">
+	<div class="container  mt-0 p-5">
+	<div class="row justify-content-between">
+		<div class="col">
+			<h2 class="text-center text-info pb-3">LOCATION</h2>
+			<p class="text-center text-white">112 W Main St.</p>
+			<p class="text-center text-white">Alhambra, CA 91801</p>
+
+		</div>
+		<div class="col">
+			<h2 class="text-center text-info pb-3">HOURS</h2>
+			<p class="text-center text-white">Brunch: Thursday - Monday, 9am to 2:30pm </p>
+			<p class="text-center text-white">Dinner: Thursday - Sunday, 5pm to 9pm</p>
+			<p class="text-center text-white">Closed Tuesdays & Wednesdays</p>
+
+		</div>
+		<div class="col">
+			<h2 class="text-center text-info pb-3">CONTACT</h2>
+			<p class="text-center text-white">+91 6609567212</p>
+			<p class="text-center text-white">hello@kitchen.com</p>
+
+		</div>
+	</div>
+</div>	
+
+</div>
+
+
+<div class="container-fluid " style="border-top: 2px solid white;">
+	<div class="container-fluid mt-0 p-3">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059729384!2d-74.25986816097694!3d40.69714941285065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1679586669183!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	</div>
+</div>
+
+<div class="container-fluid bg-dark p-0" style="border-top:2px solid white">
+	<div class="container  mt-0 p-4">
+		<div class="row">
+			<div class="col text-center">
+                <h2 class="text-white  p-3">Quick Links</h2>
+				<a href="#" class="p-2" style="text-decoration: none;">Home</a>
+				<a href="#" class="p-2" style="text-decoration: none;">About</a>
+				<a href="#" class="p-2" style="text-decoration: none;">Menu</a>
+				<a href="#" class="p-2" style="text-decoration: none;">Contact</a>
+			</div>
+			<div class="col text-center">
+				
+				<h2 class="text-white  p-3">Email</h2>
+				
+				<div class="input-wrapper" style="position: relative;display:inline-block;">
+					
+					<input type="email" class="form-control p-2" placeholder="Enter email here..." style="width: 280px;">
+					<button class="btn btn-primary input-btn " style="position: absolute;top: 0;right: 0;height: 100%;width: 75px; /* adjust the width as needed */z-index: 10;">Submit</button>
+				</div>
+
+
+			</div>
+			<div class="col text-center">
+				<h2 class="text-white p-3">Follow Us On</h2>
+				<a href="#" class="p-2"><i class="fa fa-facebook" style="font-size: 22px; color:blue;"></i></a>
+                <a href="#" class="p-2"><i class="fa fa-instagram" style="font-size: 22px; color: blue;"></i></a>
+                <a href="#" class="p-2"><i class="fa fa-whatsapp" style="font-size: 22px; color:blue; "></i></a>
+                <a href="#" class="p-2"><i class="fa fa-twitter" style="font-size: 22px; color: blue;"></i></a>
+                
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+	  
+
+
+
+</body>
+</html>
+ 
